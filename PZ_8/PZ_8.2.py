@@ -5,7 +5,11 @@
 new_dict = {'potato': 'apple', 'vegatables': 'carrot', 'фрукт': 'печень'}
 
 print(new_dict)
-
-if new_dict['фрукт'] != 'яблоко':
+if 'фрукт' not in new_dict:
     new_dict['фрукт'] = 'яблоко'
-    print(new_dict)     
+    print(new_dict)
+elif new_dict['фрукт'] != 'яблоко':
+    new_dict['фрукт'] = 'яблоко'
+    print(new_dict)
+    
+        
